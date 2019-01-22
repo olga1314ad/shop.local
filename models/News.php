@@ -9,7 +9,11 @@
 namespace Models;
 
 
-class News
+class News extends Model
 {
-
+    public function all(){
+        return [
+            ['title'=> "Первая новость", 'content'=>'Текст первой новости']
+        ];
+    }
 }
