@@ -14,6 +14,10 @@ class News extends Controller
     //Метод показа списка новостей
     public function index(){
 
+        $model= new \Models\News;
+        $list=$model->all();
+        print_r($list);
+
     }
 
     //для просмотре новости
